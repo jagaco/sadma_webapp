@@ -1,0 +1,338 @@
+<ion-header [translucent]="true" contentId="main-content">
+  <ion-toolbar  color="dark" >
+    
+    <ion-row class="ion-aling-items-center">
+      <!-- start logo -->
+      <ion-col style="min-width: 200px" >
+        <img width="200" height="50" alt="" data-mu-svgfallback="https://www.sadma.com.mx/images/logoc_poster_.png?crc=514355760" src="https://www.sadma.com.mx/images/logoc.svg?crc=3862369955" >          
+      </ion-col>
+     
+      <!-- main pages links Left Side -->
+      <ion-col size="7">
+        <div class="navbar" class="ion-text-left">
+          <ion-button *ngFor="let p of headerLinksStart; let i = index" color="light" fill="clear" routerLink="{{p.url}}" routerDirection="root" routerLinkActive="active-link" class="link">
+            {{ p.title }}
+          </ion-button>
+        </div>
+      </ion-col>
+
+      <!-- main pages links Right Side -->
+      <ion-col size="2">
+        <div class="navbar" class="ion-text-right" *ngIf="!isAuthenticated" >
+          <ion-button (click)="login()" color="light" fill="clear" routerLinkActive="active-link" class="link">
+            <ion-icon name="person-circle"></ion-icon>
+            Iniciar Session
+          </ion-button>
+        </div>
+        <div class="navbar" class="ion-text-right" *ngIf="isAuthenticated" >
+          <ion-button (click)="logout()" color="light" fill="clear" routerLinkActive="active-link" class="link">
+            <ion-icon name="person-circle"></ion-icon>
+            Cerrar Session
+          </ion-button>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" contentId="main-content">
+
+  <div class="clearfix" id="u118458_align_to_page">
+    <div class="H2 clearfix colelem" id="u100765-4"><!-- content -->
+     <p>Aviso de privacidad</p>
+    </div>
+    <div class="clearfix colelem" id="u100766-551"><!-- content -->
+     <p>&nbsp;</p>
+     <p>En base a lo estipulado por la <span id="u100766-3">Ley Federal de Protección de Datos Personales en Posesión de los Particulares,</span> así como su reglamento y demás disposiciones legislativas aplicables (en su conjunto y en lo sucesivo “la ley”), dando íntegro cumplimiento a las obligaciones que de ahí emanen, le extendemos y manifestamos para conocimiento propio y para todos los fines legales a que haya lugar, lo siguiente:</p>
+     <p>&nbsp;</p>
+     <p id="u100766-8">I. La identidad y domicilio de la Persona Responsable de recabar los Datos Personales:</p>
+     <p>SADMA SOLUTIONS, S.A. de C.V. (en lo sucesivo SADMA SOLUTIONS) a través de su representante legal Ernesto Fabián Valdez Villa, quien declara que bajo las leyes mexicanas es una sociedad legalmente constituida en la ciudad de Zapopan, Jalisco, México; designa para efectos del presente <span id="u100766-10">Aviso de Privacidad </span>el domicilio ubicado en Calle Venustiano Carranza #2 Col. La Cuchilla C.P 45200 en el municipio de Zapopan, entidad de Jalisco, conforme a lo dispuesto por el <span id="u100766-12">artículo 16, fracción I </span>de la Ley.</p>
+     <p>Se señala a SADMA SOLUTIONS&nbsp; como <span id="u100766-16">responsable</span> del tratamiento de los datos personales que le sean proporcionados de las personas físicas o morales a quienes correspondan los mismos (en lo sucesivo “el titular” o “los titulares”), y suscribe el presente <span id="u100766-18">Aviso de Privacidad </span>en cumplimiento con la Ley Federal de Protección de Datos Personales en Posesión de los Particulares (en este acto, así como actos pasados y/o futuros), función consistente en recabar, manejar, proteger y almacenar los datos personales de los clientes, proveedores y/o beneficiados de cualquiera de sus productos y/o servicios, para el cabal cumplimiento de lo dispuesto por el <span id="u100766-20">artículo 14 </span>de la Ley.</p>
+     <p>&nbsp;</p>
+     <p>Los datos personales que usted nos ha proporcionado directamente o a través de medios electrónicos han sido recabados y serán tratados bajo los principios de<span id="u100766-25"> licitud, consentimiento, información, calidad, finalidad, lealtad, proporcionalidad y responsabilidad,</span> encontrándose debidamente protegidos a través de medidas de seguridad tecnológicas, físicas y administrativas, previniendo el uso o divulgación indebida de los mismos de conformidad con lo dispuesto por la Ley.</p>
+     <p>&nbsp;</p>
+     <p>Para cualquier asunto relacionado con el tratamiento de los datos personales, SADMA SOLUTIONS pone a su disposición las siguientes formas de contacto:</p>
+     <p>&nbsp;</p>
+     <p><span id="u100766-32">&nbsp;&nbsp;&nbsp;&nbsp; • Ubicación Física:</span> Calle Venustiano Carranza #2 Col. La Cuchilla C.P 45200 en el municipio de Zapopan, Jalisco.</p>
+     <p><span id="u100766-35">&nbsp;&nbsp;&nbsp;&nbsp; • Servicio de Atención Personal: </span>Por vía telefónica en el teléfono: (33) 12 85 06 65, o envíenos un correo a la dirección de correo electrónico: clientes@sadma.com.mx</p>
+     <p><span id="u100766-38">&nbsp;&nbsp;&nbsp;&nbsp; </span>• Visítenos en nuestra oficina.</p>
+     <p>&nbsp;</p>
+     <p id="u100766-43">EL COMPROMISO DE SADMA SOLUTIONS CON SU PRIVACIDAD</p>
+     <p>En SADMA SOLUTIONS respetamos su derecho a la privacidad y a la protección de sus datos personales. Nosotros no vendemos o rentamos a terceros sus datos. Solamente transferimos o compartimos a terceros sus datos personales en los términos establecidos en el presente Aviso de Privacidad. Estas comunicaciones se realizan únicamente si usted las ha consentido o bien cuando no se requiera su consentimiento, en términos de la legislación aplicable.</p>
+     <p>&nbsp;</p>
+     <p>Asimismo, para nosotros resulta importante que usted cuente con la capacidad de realizar decisiones bien informadas acerca de la forma en que usamos sus datos personales.</p>
+     <p>&nbsp;</p>
+     <p>Este Aviso de Privacidad explica las políticas y prácticas de privacidad que se rigen en SADMA SOLUTIONS con relación al tratamiento que hacemos de sus datos personales (entendiendo por tratamiento la obtención, el uso, la divulgación, y almacenamiento de dichos datos) y las medidas que tomamos para proteger sus datos. Este Aviso está dirigido a: (1) Nuestros clientes y miembros cuando realizan compras en nuestra sucursal y contratan alguno de nuestros servicios.</p>
+     <p>&nbsp;</p>
+     <p>&nbsp;</p>
+     <p id="u100766-55">II. Tratamiento de Datos Personales:</p>
+     <p>En base a lo establecido por el <span id="u100766-57">artículo 3, Fracción XVIII,</span> de la Ley, se&nbsp;&nbsp;&nbsp; considera <span id="u100766-59">Tratamiento de Datos Personales,</span> la obtención, uso, divulgación o almacenamiento de datos personales, por cualquier medio. El uso abarca cualquier acción de acceso, manejo, aprovechamiento, transferencia o disposición de datos personales.</p>
+     <p>El tratamiento de datos se limitará al cumplimiento de las finalidades de tratamiento previstas en el presente <span id="u100766-63">Aviso de Privacidad</span> y se sujetara a lo siguiente:</p>
+     <p><span id="u100766-66">&nbsp;&nbsp;&nbsp;&nbsp; </span>• En caso de que se pretenda tratar sus datos personales para un&nbsp; fin&nbsp;&nbsp; distinto a los fines de este <span id="u100766-68">Aviso de Privacidad,</span> SADMA SOLUTIONS requerirá obtener su consentimiento para tal supuesto.</p>
+     <p><span id="u100766-71">&nbsp;&nbsp;&nbsp;&nbsp; </span>• Será el que resulte necesario, adecuado y relevante para&nbsp;&nbsp; los fines descritos en el presente <span id="u100766-73">Aviso de Privacidad.</span></p>
+     <p>&nbsp;</p>
+     <p id="u100766-77">USO DE SUS DATOS PERSONALES</p>
+     <p>En general, los datos personales que obtenemos de usted son utilizados para procesar sus solicitudes y transacciones; para proveerle servicios de alta calidad; para hacerle saber de oportunidades que consideramos que podrían ser de su interés y para administrar su cuenta. Algunas finalidades específicas para las cuales sus datos son procesados son las siguientes:</p>
+     <p><span id="u100766-80">&nbsp;&nbsp;&nbsp;&nbsp; </span>a) Para procesar su solicitud y su pago (incluyendo la evaluación de su método de pago, para efectos de prevención de fraude);</p>
+     <p>&nbsp;</p>
+     <p><span id="u100766-84">&nbsp;&nbsp;&nbsp;&nbsp; </span>b) Para administrar su membresía. Esta finalidad incluye el procesar sus datos para efectos de facturación; procesar devoluciones de productos; llevar un histórico de sus transacciones; descuentos y recompensas; llevar a cabo aclaraciones e investigaciones;</p>
+     <p>&nbsp;</p>
+     <p><span id="u100766-88">&nbsp;&nbsp;&nbsp;&nbsp; </span>c) Comunicarnos con usted por diferentes motivos relacionados con su compra incluyendo aspectos relacionados con la entrega de su vehículo si así fuera el caso, notificarle el retiro de productos o aspectos de seguridad;</p>
+     <p>&nbsp;</p>
+     <p><span id="u100766-92">&nbsp;&nbsp;&nbsp;&nbsp; </span>d) Informarle sobre posibles oportunidades relacionadas con su membresía y de programas relacionados y;</p>
+     <p>&nbsp;</p>
+     <p><span id="u100766-96">&nbsp;&nbsp;&nbsp;&nbsp; </span>e) Para fines de mercadotecnia. Podemos hacerle llegar publicaciones, encuestas, o información promocional de diversos tipos tales como cupones, ofertas (incluyendo ofertas personalizadas) y recomendaciones sobre productos (la "Información Promocional"), más adelante se detalla información más precisa para ejemplificar este punto.</p>
+     <p>&nbsp;</p>
+     <p>Por favor considere que el hacerle llegar Información Promocional no es una actividad que consideremos esencial para mantener la relación que sostenemos con usted. Si usted prefiere no recibir Información Promocional, es necesario hacernos saber esta decisión. Para conocer más acerca de los medios que SADMA SOLUTIONS&nbsp; le ofrece para que usted pueda limitar la forma en que SADMA SOLUTIONS&nbsp; usa o divulga sus datos personales, por favor consulte la sección "Opciones para Limitar el Uso o Divulgación de sus Datos Personales" establecida en este Aviso.</p>
+     <p>&nbsp;</p>
+     <p>Usted puede contactarnos en cualquier momento para rechazar el recibir Información Promocional. El hecho de que usted decida no recibir Información Promocional no afectará su posibilidad de recibir de nosotros los servicios o productos que usted nos solicite.</p>
+     <p id="u100766-105">&nbsp;</p>
+     <p id="u100766-107">III. Finalidades del Tratamiento de Datos Personales</p>
+     <p>A través del presente <span id="u100766-109">Aviso de Privacidad</span> y con fundamento en el <span id="u100766-111">artículo 16, fracción II,</span> de la Ley, SADMA SOLUTIONS declara que las <span id="u100766-113">finalidades principales</span> del tratamiento de sus datos personales serán las siguientes que son necesarias para el servicio solicitado:</p>
+     <p id="u100766-116">&nbsp;</p>
+     <p id="u100766-118">o Fines comerciales:</p>
+     <p>&nbsp;&nbsp;&nbsp; • Realización de Transacciones comerciales electrónicas o en físico de nuestros productos y/o servicios, realizando para tal efecto cargos económicos en efectivo o de manera electrónica, esto derivado de las transacciones comerciales.</p>
+     <p>&nbsp;&nbsp;&nbsp; • Administrar, operar y dar seguimiento a los servicios y/o productos que solicita o contrata con nosotros.</p>
+     <p>&nbsp;&nbsp;&nbsp; • Dar cumplimiento a obligaciones contraídas con nuestros clientes.</p>
+     <p>&nbsp;&nbsp;&nbsp; • Verificar, confirmar y validar su identidad.</p>
+     <p>&nbsp;&nbsp;&nbsp; •&nbsp; Proporcionar su información a nuestros Valuadores o empleados designados para atenderle físicamente, así como para contactarlo para dar mayor o nueva información solicitada con tales fines, o dar información de sus empresas operadoras de marca o subsidiarias, con fines informativos, o de promoción.</p>
+     <p>&nbsp;&nbsp;&nbsp; • Para contactarlo en relación con la atención que ha recibido por parte del Valuador o empleado designado, o para que la Coordinación de Atención a Clientes pueda brindarle información oportuna de los temas de su interés.</p>
+     <p>&nbsp;&nbsp;&nbsp; • Para que usted participe en promociones, u otras actividades de SADMA SOLUTIONS.</p>
+     <p>&nbsp;</p>
+     <p id="u100766-135">o Fines Fiscales:</p>
+     <p>&nbsp;&nbsp;&nbsp; • Realizar la Facturación fiscal correspondiente derivada de la comercialización de nuestros productos y/o servicios con clientes y proveedores, esto en cumplimiento de sus obligaciones fiscales.</p>
+     <p>&nbsp;</p>
+     <p>En caso de que usted realice una transacción electrónica para cumplir con las obligaciones que en su caso tengamos o llegaremos a tener con usted, utilizaremos sus datos personales para contactarle o enviarle los productos o servicios adquiridos.</p>
+     <p>&nbsp;</p>
+     <p>De manera adicional, SADMA SOLUTIONS utilizará su información su información personal para las siguientes <span id="u100766-143">Finalidades Secundarias</span> que no son necesarias para el servicio solicitado, pero que le permitirá y facilitará brindarle una mejor atención:</p>
+     <p>&nbsp;</p>
+     <p id="u100766-148">o Fines Mercadotécnicos:</p>
+     <p>Con el objeto de darle a conocer a usted la información comercial, entre la que se destaca realizar actividades de mercadotecnia comercial de nuestros productos o servicios, cambio en nuestros productos o servicios, solicitar evaluación de la calidad en el servicio, realizar estudios internos sobre hábitos de consumo y cualquier otro promocional o cuestión relacionada con los productos y/o servicios.</p>
+     <p>&nbsp;</p>
+     <p>De forma específica SADMA SOLUTIONS realizará:</p>
+     <p>&nbsp;</p>
+     <p>&nbsp;&nbsp;&nbsp; • Llamadas telefónicas de localización y verificación de la información del cliente, así como proporcionar seguimiento a los proyectos y cotizaciones realizadas.</p>
+     <p>&nbsp;&nbsp;&nbsp; • Comercializar servicios y productos de SADMA SOLUTIONS y empresas donde adquirimos nuestros productos y servicios.</p>
+     <p>&nbsp;&nbsp;&nbsp; • Envío de correos electrónicos para enviar la facturación electrónica, hacer la recepción de comprobantes fiscales, brindar información, aclaraciones y boletines.</p>
+     <p>&nbsp;&nbsp;&nbsp; • Elaborar perfiles de clientes para el ofrecimiento de productos y servicios.</p>
+     <p>&nbsp;&nbsp;&nbsp; • Publicación y posteo en diversas redes sociales para contacto y fidelización de los clientes.</p>
+     <p>&nbsp;&nbsp;&nbsp; • Solicitarle información para efectos de investigación de mercado.</p>
+     <p>&nbsp;</p>
+     <p>En caso de que usted no desee que sus datos personales sean tratados para estos fines adicionales, usted puede indicarlo a continuación:</p>
+     <p>&nbsp;</p>
+     <p id="u100766-172">No consiento que mis datos personales se utilicen para los siguientes fines:</p>
+     <p id="u100766-174">[&nbsp; ] Mercadotécnicos o Publicitarios.</p>
+     <p id="u100766-176">[&nbsp; ] Prospección Comercial.</p>
+     <p>&nbsp;</p>
+     <p>Para hacer uso de este derecho, a partir de este momento usted podrá enviar un correo electrónico a: clientes@sadma.com.mx y le haremos llegar nuestro aviso de privacidad simplificado y de forma expresa con su nombre y firma autógrafa lo podrá entregar presencialmente al responsable del tratamiento de sus datos personales en el domicilio asignado para tal efecto.</p>
+     <p>&nbsp;</p>
+     <p>La negativa para el uso de sus datos personales para estas finalidades no podrá ser un motivo para que le neguemos los productos y/o servicios que usted solicita o contrata.</p>
+     <p id="u100766-183">&nbsp;</p>
+     <p id="u100766-185">IV. Datos personales recabados.</p>
+     <p id="u100766-186">&nbsp;</p>
+     <p id="u100766-188">¿Qué datos personales obtenemos y de dónde?</p>
+     <p>&nbsp;</p>
+     <p>Para las finalidades señaladas en el presente aviso de privacidad, podemos recabar sus datos personales de distintas formas: cuando usted nos los proporciona directamente, cuando utiliza nuestros servicios y cuando obtenemos información a través de otras fuentes que están permitidas por la ley.</p>
+     <p id="u100766-192">&nbsp;</p>
+     <p id="u100766-194">a) Datos personales que recabamos de forma directa</p>
+     <p id="u100766-195">&nbsp;</p>
+     <p>Recabamos sus datos personales de forma directa cuando usted mismo nos los proporciona por diversos medios, como cuando participa en nuestras promociones o nos da información con objeto de que le prestemos un servicio. Los datos que obtenemos por este medio pueden ser, entre otros:</p>
+     <p id="u100766-198">&nbsp;</p>
+     <p id="u100766-200">De identificación.</p>
+     <p>&nbsp;&nbsp;&nbsp; • Nombre completo de la persona o del Representante Legal.</p>
+     <p>&nbsp;&nbsp;&nbsp; • Nombre de la empresa</p>
+     <p>&nbsp;&nbsp;&nbsp; • Edad</p>
+     <p>&nbsp;&nbsp;&nbsp; • Género</p>
+     <p>&nbsp;&nbsp;&nbsp; • Nacionalidad</p>
+     <p>&nbsp;&nbsp;&nbsp; • Estado civil</p>
+     <p>&nbsp;&nbsp;&nbsp; • Profesión</p>
+     <p>&nbsp;&nbsp;&nbsp; • Actividad empresarial</p>
+     <p>&nbsp;&nbsp;&nbsp; • Fecha de nacimiento</p>
+     <p>&nbsp;&nbsp;&nbsp; • Lugar de nacimiento</p>
+     <p>&nbsp;&nbsp;&nbsp; • Identificación oficial (I.N.E)</p>
+     <p>&nbsp;&nbsp;&nbsp; • Registro Federal de Contribuyentes (R.F.C)</p>
+     <p>&nbsp;&nbsp;&nbsp; • Clave Única de Registro de Población (CURP)</p>
+     <p>&nbsp;&nbsp;&nbsp; • Número de Seguridad Social (IMSS)</p>
+     <p>&nbsp;&nbsp;&nbsp; • Cuenta del Sistema de Ahorro para el Retiro (AFORE)</p>
+     <p>&nbsp;&nbsp;&nbsp; • Firma Autógrafa</p>
+     <p id="u100766-233">&nbsp;</p>
+     <p id="u100766-235">De contacto.</p>
+     <p>&nbsp;&nbsp;&nbsp; • Domicilio completo personal/fiscal.</p>
+     <p>&nbsp;&nbsp;&nbsp; • Teléfono Fijo.</p>
+     <p>&nbsp;&nbsp;&nbsp; • Teléfono Móvil.</p>
+     <p>&nbsp;&nbsp;&nbsp; • Correo Electrónico.</p>
+     <p>&nbsp;</p>
+     <p id="u100766-246">Uso de cookies y aplicaciones de Análisis de Datos.</p>
+     <p id="u100766-247">&nbsp;</p>
+     <p><span id="u100766-248">Le informamos que</span> SADMA SOLUTIONS utiliza en su sitio de internet Cookies y/o Web Beacons, a través de estos mecanismos se recaban datos de manera automática y simultanea para monitorear su comportamiento como usuario de los servicios de internet.</p>
+     <p>&nbsp;</p>
+     <p>SADMA SOLUTIONS puede obtener de manera automática cierta información cuando usted visita el Sitio web. Esta información incluye la dirección IP asociada a su equipo de cómputo y el sistema operativo que utiliza, la página web desde la cual usted fue enlazado a nuestro Sitio web, su actividad dentro del Sitio web, la fecha y hora en la que visitó nuestra tienda en línea y sus compras. Esta información puede ser obtenida a través del uso de "Cookies" y "Web Beacons".</p>
+     <p>&nbsp;</p>
+     <p>SADMA SOLUTIONS SA DE CV también puede obtener información de usted de manera indirecta cuando ésta nos es proporcionada por terceros a quienes hemos contratado para apoyarnos en procesos específicos. Estos procesos incluyen la corrección de registros, los servicios de prevención de fraude y el ofrecimiento de ofertas o productos especiales. Es posible que conjuntemos la información que recibimos de estos terceros con aquella que ya tenemos de usted.</p>
+     <p>&nbsp;</p>
+     <p id="u100766-259">b) Datos personales que recabamos a través de otras fuentes</p>
+     <p>Podemos obtener información de usted de otras fuentes permitidas por la ley, tales como los directorios telefónicos o laborales. Los datos que obtenemos por estos medios pueden ser, entre otros:</p>
+     <p>&nbsp;</p>
+     <p id="u100766-264">Datos personales sensibles</p>
+     <p>&nbsp;</p>
+     <p>SADMA SOLUTIONS adicionalmente le informa a usted, que<span id="u100766-267"> SI recabara datos personales sensibles</span> de sus clientes únicamente con la finalidad de realizar los servicios profesionales de intermediación para la compra venta de inmuebles que realiza y que tiene contratados con sus clientes. Así mismo, nos comprometemos a que dichos datos sensibles, siendo estos los datos patrimoniales que se mencionan a continuación en este mismo numeral serán tratados bajos las más estrictas medidas de seguridad que garanticen su confidencialidad y únicamente para dar cumplimiento a las finalidades mencionadas en el presente <span id="u100766-269">Aviso de Privacidad.</span></p>
+     <p>&nbsp;</p>
+     <p>Le informamos que para cumplir con las finalidades previstas en este aviso de privacidad, serán recabados y tratados datos personales sensibles, que se mencionan a continuación:</p>
+     <p>&nbsp;</p>
+     <p><span id="u100766-275">Patrimoniales o Financieros.</span></p>
+     <p>&nbsp;</p>
+     <p>&nbsp;&nbsp;&nbsp;&nbsp; • Estados Financieros y Contables.</p>
+     <p>&nbsp;&nbsp;&nbsp;&nbsp; • Ingresos y Egresos Económicos.</p>
+     <p>&nbsp;&nbsp;&nbsp;&nbsp; • Estados de Cuenta Bancarios.</p>
+     <p>&nbsp;&nbsp;&nbsp;&nbsp; • Número de Cuenta Bancaria y/o Tarjeta de debito o crédito.</p>
+     <p>&nbsp;&nbsp;&nbsp;&nbsp; • Número CLABE de transferencia Interbancaria.</p>
+     <p>&nbsp;&nbsp;&nbsp;&nbsp; • Nombre del Titular de la cuenta y/o tarjeta.</p>
+     <p>&nbsp;&nbsp;&nbsp;&nbsp; • Fecha de Vencimiento.</p>
+     <p>&nbsp;&nbsp;&nbsp;&nbsp; • Código de seguridad.</p>
+     <p>&nbsp;&nbsp;&nbsp;&nbsp; • Teléfono del titular de la cuenta y/o tarjeta.</p>
+     <p>&nbsp;&nbsp;&nbsp;&nbsp; • Domicilio del titular de la cuenta y/o tarjeta.</p>
+     <p>&nbsp;</p>
+     <p>De conformidad con lo que establece el <span id="u100766-300">artículo 9</span> de la Ley en cita, requerimos de su consentimiento expreso para el tratamiento de sus datos personales sensibles, por lo que es importante que indique si acepta o no el tratamiento al llenar el formulario que solicitara sus datos sensibles.</p>
+     <p>&nbsp;</p>
+     <p id="u100766-305">V. Transferencia de los Datos Personales</p>
+     <p>&nbsp;</p>
+     <p>SADMA SOLUTIONS de forma eventual, comparte sus Datos Personales con:</p>
+     <p>&nbsp;</p>
+     <p>&nbsp;&nbsp;&nbsp; • Proveedores que prestan servicio a SADMA SOLUTIONS para el mantenimiento&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; o cumplimiento de la relación jurídica con los clientes.</p>
+     <p>&nbsp;&nbsp;&nbsp; • Terceros que presten servicios de auditoría a SADMA SOLUTIONS</p>
+     <p>&nbsp;&nbsp;&nbsp; • Socios comerciales con quien se tengan celebrados contratos para la comercialización de productos y/o servicios incluidos en la tarjeta de descuento&nbsp; en beneficio de los clientes.</p>
+     <p>&nbsp;&nbsp;&nbsp; • Autoridades competentes, previstas en las legislaciones aplicables a las Instituciones Financieras.</p>
+     <p>&nbsp;&nbsp;&nbsp; • En cualquier caso, SADMA SOLUTIONS comunicará a los receptores, el presente Aviso de Privacidad, con el fin de asegurar que su información se utilice en los términos del mismo.</p>
+     <p>&nbsp;</p>
+     <p>En caso de ser necesario, su información podrá ser compartida con otras empresas con la finalidad de llevar a cabo el servicio solicitado y/o prestado por esta empresa. En su caso, se le comunica que sus datos personales podrán quedar sujetos a transferencia y tratamiento dentro del país, por personas distintas a esta empresa.</p>
+     <p>&nbsp;</p>
+     <p>En caso de que SADMA SOLUTIONS transfiriera sus datos personales con terceras personas, con el&nbsp; fin de llevar a cabo las finalidades del tratamiento establecidas en el presente <span id="u100766-325">Aviso de Privacidad,</span> lo hará previa celebración de convenios de confidencialidad y, siempre y cuando:</p>
+     <p>&nbsp;</p>
+     <p>1. La persona o empresa a quien se le transmitan los datos personales, acepte someter el tratamiento de los datos personales al presente Aviso de Privacidad.</p>
+     <p>2. No se trate de alguno de los supuestos establecidos en el artículo 37 de la Ley.</p>
+     <p>&nbsp;</p>
+     <p>Si usted no manifiesta su oposición para que sus datos personales sean transferidos, se entenderá́ que ha otorgado su consentimiento para ello.</p>
+     <p>&nbsp;</p>
+     <p id="u100766-338">SADMA SOLUTIONS PUEDE COMPARTIR O TRANSFERIR SUS DATOS PERSONALES EN LOS TÉRMINOS QUE SE DESCRIBEN A CONTINUACIÓN.</p>
+     <p>&nbsp;</p>
+     <p>a) Empresas que nos prestan servicios. SADMA SOLUTIONS puede remitir sus datos personales a empresas que nos prestan algún servicio. Estos servicios se prestan por instrucciones nuestras, en los términos de los contratos correspondientes. Por ejemplo, SADMA SOLUTIONS puede contratar a un proveedor para que se encargue de prestar diversos servicios relacionados con el comercio electrónico. Estos servicios incluyen el procesamiento de pago a través de tarjetas de crédito, el envío de la mercancía, el envío de los correos electrónicos relacionados, la aplicación de descuentos y el análisis de información; entre otros aspectos. En caso de que alguno de estos proveedores requiera tener acceso a sus datos personales, nosotros exigiremos a dicho proveedor que únicamente utilice sus datos personales en la medida que dicho uso resulte necesario para la ejecución del servicio contratado. SADMA SOLUTIONS solicita a estas empresas mantener de manera confidencial la información que reciben y a regresar dicha información a SADMA SOLUTIONS.</p>
+     <p>&nbsp;</p>
+     <p>b) Socios Titulares. El Socio titular de la membresía se encuentra autorizado para designar o remover a otros titulares de membresías&nbsp; (todos los titulares de la membresía son familiares&nbsp; solo en caso de la tarjeta de descuentos “A LIFE STYLE o COMPANY STYLE”. para el caso de la tarjeta empresarial los términos y condiciones más el aviso de privacidad se encontrara en otro apartado) y a tomar otras decisiones relacionadas con la membresía; SADMA SOLUTIONS puede mostrar al titular de la membresía a life style o company style datos personales de dichos terceros en lo tocante a las actividades relacionadas con la cuenta. SADMA SOLUTIONS solamente provee esta información al titular de la membresía y únicamente cuando esta información se solicita en nuestros almacenes; todo titular debe presentar su identificación para efectos de tener acceso a la información.</p>
+     <p>&nbsp;</p>
+     <p>c) Transferencias a terceros. Le informamos que SADMA SOLUTIONS puede transferir sus datos personales a terceros, en la medida que dicha transferencia resulte necesaria para poder procesar nuestra orden de compra. En este sentido, sus datos pueden ser transferidos a:</p>
+     <p>&nbsp;</p>
+     <p>1. Empresas que prestan servicios de procesamiento de pagos y prevención de fraude. En caso de que usted pague con su tarjeta de crédito, su número de tarjeta de crédito y la información sobre su compra serán entregados a la empresa que se encarga de procesar los pagos o al emisor de la tarjeta (y a sus prestadores de servicios o afiliadas, quienes participan en los servicios de verificación de fraudes en tarjetas de crédito). La transferencia resulta necesaria para poder procesar su transacción, para poder identificar riesgos de fraude relacionados a su tarjeta y para poder reembolsarle su dinero en su tarjeta de crédito si usted decide cancelar su orden o devolver algún artículo;</p>
+     <p>&nbsp;</p>
+     <p>2. Empresas donde adquirimos nuestros productos&nbsp; y&nbsp; productos. SADMA SOLUTIONS puede transferir sus datos personales (incluyendo, nombre, y datos de contacto) a las empresas donde adquirimos nuestros productos y servicios</p>
+     <p>En cualquier caso SADMA SOLUTIONS proporciona a los proveedores y a cualquier otro tercero que participe en alguna actividad relacionada con el proceso de compra o entrega de los bienes, únicamente aquella información que resulta necesaria para efecto de hacerle llegar los productos o servicios que usted ha contratado o adquirido y exigimos a dichos proveedores el mantener dicha información como confidencial y a no utilizarla para ningún fin distinto al referido.</p>
+     <p>&nbsp;</p>
+     <p>SADMA SOLUTIONS no será responsable por los datos personales que usted proporcione directamente a las empresas referidas por favor consulte las políticas, prácticas y avisos de privacidad de estas empresas antes de proveerles directamente a ellas sus datos personales.</p>
+     <p>Otros usos o divulgación de sus datos personales. Adicionalmente, SADMA SOLUTIONS puede usar o divulgar sus datos personales cuando consideremos, de buena fe, que la legislación aplicable nos permite usar o divulgar sus datos, en términos de los artículos 4 y 37 de la Ley Federal de Protección de Datos Personales en Posesión de los Particulares. Lo anterior incluye, por ejemplo, cuando dicha transferencia resulte necesaria para protegerlo a usted, para cumplir con algún proceso legal o con requerimientos de autoridades, para responder a reclamaciones o para proteger los derechos de propiedad o la seguridad de SADMA SOLUTIONS de sus afiliadas, de los empleados de SADMA SOLUTIONS de los Socios o los derechos de terceros.</p>
+     <p>&nbsp;</p>
+     <p>Se hace notar que la información relacionada con nuestros Socios, incluyendo sus datos personales, podrían ser comunicados o transferidos a un tercero, en el contexto de la negociación de una fusión o una venta de activos o una adquisición.</p>
+     <p>&nbsp;</p>
+     <p id="u100766-366">VI. Derechos de Acceso, Rectificación, Cancelación u Oposición (ARCO)</p>
+     <p>&nbsp;</p>
+     <p>Conforme al <span id="u100766-369">artículo 16 fracción IV, artículo 22</span> y demás relativos de la <span id="u100766-371">Ley Federal de Protección de Datos Personales en Posesión de Particulares</span>, son los derechos que toda persona puede ejercer en relación con el tratamiento de sus datos personales. Para que los utiliza y las condiciones de uso que les da <span id="u100766-373">(Acceso)</span>, derecho a solicitar la corrección de su información personal en caso de que este desactualizada, sea inexacta o incompleta <span id="u100766-375">(Rectificación),</span> que sea eliminada de los registros o bases de datos cuando usted considere que la misma no está siendo utilizada conforme a los principios, deberes y obligaciones previstas en la normativa <span id="u100766-377">(Cancelación)</span>, así como oponerse al tratamiento de sus datos personales para fines específicos <span id="u100766-379">(Oposición).</span></p>
+     <p>&nbsp;</p>
+     <p>Usted podrá en cualquier momento revocar el consentimiento que ha otorgado a SADMA SOLUTIONS, para el tratamiento de sus datos personales, limitar el uso o divulgación de los mismos y ejercer sus <span id="u100766-383">Derechos ARCO</span> previstos en la Ley, para ello, es necesario que realice su petición en la dirección electrónica que proporcionamos y en un plazo máximo de <span id="u100766-385">30 días</span> atenderemos su petición y le informaremos sobre la procedencia de la misma a través de un mensaje de correo electrónico o el medio que nos indique.</p>
+     <p>&nbsp;</p>
+     <p>Para lo anterior, el Responsable pone a su disposición las siguientes formas de contacto y recepción de información y documentación relacionada:</p>
+     <p>&nbsp;</p>
+     <p>&nbsp;&nbsp;&nbsp; • <span id="u100766-393">Ubicación Física:</span> Calle Venustiano Carranza #2 Col. La Cuchilla C.P 45200, en el municipio de Zapopan, Jalisco.</p>
+     <p>&nbsp;&nbsp;&nbsp; • <span id="u100766-397">Servicio de Atención Personal:</span> Por vía telefónica en el teléfono: (33) 12 85 06 65, o envíenos un correo a la dirección de correo electrónico: clientes@sadma.com.mx</p>
+     <p>&nbsp;&nbsp;&nbsp; • Visítenos en nuestra oficina.</p>
+     <p>&nbsp;</p>
+     <p>Los derechos mencionados <span id="u100766-404">“DERECHOS ARCO”</span> pueden ser ejercidos a través de la presentación de la solicitud de ejercicio de derechos ARCO, deberá entregarla personalmente al responsable del tratamiento de sus datos personales en el domicilio asignado para tal efecto, de forma expresa con su nombre y firma autógrafa, o podrá enviarla al correo electrónico: clientes@sadma.com.mx, dicha solicitud en cuestión deberá contener y acompañar lo siguiente:</p>
+     <p>&nbsp;</p>
+     <p>1. El nombre del titular y domicilio u otro medio para comunicarle la respuesta a su solicitud.</p>
+     <p>2. Los documentos que acrediten la identidad o, en su caso, la representación legal del titular.</p>
+     <p>3. La descripción clara y precisa de los datos personales respecto de los que se busca ejercer alguno de los derechos antes mencionados.</p>
+     <p>4. Cualquier otro elemento o documento que facilite la localización de los datos personales.</p>
+     <p>5. Para el caso de las solicitudes de rectificación el titular deberá indicar las modificaciones a realizarse y aportar la documentación que sustente su petición.</p>
+     <p>&nbsp;</p>
+     <p>SADMA SOLUTIONS le comunicará al titular de los datos personales la determinación adoptada en un plazo no mayor a <span id="u100766-420">20 (veinte) días hábiles</span> contados desde la fecha en que se recibió la solicitud. Este plazo podrá ser ampliado en una sola ocasión por un periodo igual, siempre y cuando así lo justifiquen las circunstancias del caso. Con base en lo anterior y de acuerdo a lo establecido en la Ley, se le informará al titular de los datos personales el sentido y motivación de la resolución, por el mismo medio por el que se llevo a cabo la solicitud, y acompañará con las pruebas pertinentes dicha resolución en su caso.</p>
+     <p>&nbsp;</p>
+     <p>Cuando la solicitud sea procedente se hará efectiva por parte de SADMA SOLUTIONS dentro de los <span id="u100766-425">15 (quince) días hábiles</span> siguientes a la comunicación de la resolución adoptada.</p>
+     <p>&nbsp;</p>
+     <p>Así mismo, el titular podrá presentar ante el Instituto <span id="u100766-430">Federal de Acceso a la Información (IFAI)</span> una solicitud de protección de datos por la respuesta recibida o por la falta de respuesta. En el supuesto que la solicitud sea presente por la respuesta recibida, esta deberá hacerse dentro de los <span id="u100766-432">15 (quince) días hábiles</span> siguientes a la fecha en que se comunique la respuesta al titular por parte de SADMA SOLUTIONS, y se sujetará a lo previsto por la Ley.</p>
+     <p>&nbsp;</p>
+     <p>En caso de solicitudes de acceso a los datos personales, será necesario que el solicitante, ya sea el titular o su representante legal, acrediten previamente su identidad. La obligación de acceso a la información se dará por cumplida cuando SADMA SOLUTIONS ponga a disposición del titular los datos personales o mediante la expedición de copias simples o mediante documentos electrónicos.</p>
+     <p>La contestación a la solicitud para el acceso, rectificación, cancelación u oposición de los datos personales será totalmente gratuita. Se deberá cubrir únicamente los gastos justificados por razones de envío o el costo por la reproducción en copias u otros formatos, los cuales, en su momento, se le harán saber.</p>
+     <p>&nbsp;</p>
+     <p>En el caso que la misma persona reitere la solicitud de acceso, rectificación, cancelación u oposición de los datos personales en un período menor a <span id="u100766-442">12 (doce) meses</span> contado a partir de la fecha de la última solicitud, la contestación a su solicitud podrá llegar a tener un costo adicional, éste será el que señale SADMA SOLUTIONS, de acuerdo con lo establecido en<span id="u100766-444"> artículo 35</span> de la Ley.</p>
+     <p>&nbsp;</p>
+     <p>SADMA SOLUTIONS podrá negar el acceso total o parcial a los datos personales o a la realización de la rectificación, cancelación u oposición al tratamiento de los mismos, en los siguientes supuestos:</p>
+     <p>&nbsp;&nbsp;&nbsp; • Cuando el solicitante no sea el titular o el representante legal no esté debidamente acreditado para ello.</p>
+     <p>&nbsp;&nbsp;&nbsp; • Cuando en la base de datos, no se encuentren los datos personales del solicitante.</p>
+     <p>&nbsp;&nbsp;&nbsp; • Cuando se lesionen los derechos de un tercero.</p>
+     <p>&nbsp;&nbsp;&nbsp; • Cuando exista impedimento legal o resolución de alguna autoridad.</p>
+     <p>&nbsp;&nbsp;&nbsp; • Cuando la rectificación, cancelación u oposición haya sido previamente realizada, de manera que la solicitud carezca de materia.</p>
+     <p>&nbsp;</p>
+     <p>La cancelación de los datos personales dará lugar a un periodo de bloqueo tras el cual SADMA SOLUTIONS procederá a la supresión de los datos personales.</p>
+     <p>Una vez cancelados los datos personales correspondientes, se dará aviso a su titular. Hecho lo anterior, se podrán conservar los datos personales exclusivamente para efectos de las responsabilidades derivadas del tratamiento a que se refiere el <span id="u100766-464">Aviso de Privacidad</span>.</p>
+     <p>Cuando los datos personales se hubiesen transmitido a terceros antes de la rectificación o cancelación y estos sean tratados por dichos terceros, SADMA SOLUTIONS deberá hacer de su conocimiento la solicitud presentada por el titular, para que éste proceda a efectuar las rectificaciones o cancelaciones correspondientes a los terceros involucrados.</p>
+     <p>SADMA SOLUTIONS no estará obligado a cancelar sus datos personales cuando se trate de alguno de los supuestos establecidos en el <span id="u100766-470">artículo 26</span> de la Ley. Así mismo, cuando la información recabada en los datos personales deje de ser necesaria para el cumplimiento de las finalidades previstas en éste <span id="u100766-472">Aviso de Privacidad</span> y en las disposiciones jurídicas aplicables, los datos personales serán cancelados de las Bases de Datos.</p>
+     <p>&nbsp;</p>
+     <p id="u100766-477">VII. Aceptación o revocación del tratamiento de los datos personales.</p>
+     <p id="u100766-478">&nbsp;</p>
+     <p>Para que SADMA SOLUTIONS pueda llevar a cabo el tratamiento de los datos personales, los clientes, prospectos, proveedores y/o titulares de los datos personales, deberán otorgar la aceptación expresa o tácita para dicho tratamiento, la cual se llevará por cualquiera de los siguientes medios:</p>
+     <p>&nbsp;</p>
+     <p id="u100766-483">Aceptación de Manera Personal.</p>
+     <p>Cuando los datos personales se obtengan personalmente del titular, SADMA SOLUTIONS pondrá a su disposición el presente <span id="u100766-485">Aviso de Privacidad</span> en el momento en que sean recabados sus datos personales y de una forma clara y fehaciente, por medio de los formatos que se utilizan o llegaren a utilizarse para tal efecto. Además, a través de dichos formatos, se recabará la aceptación o negación del consentimiento del titular para someter dichos datos a las finalidades del tratamiento establecidas en el presente <span id="u100766-487">Aviso de Privacidad</span>.</p>
+     <p>Aceptación Tácita.</p>
+     <p>Con base en lo establecido en el <span id="u100766-493">artículo 35 </span>de la Ley, el contenido de este <span id="u100766-495">Aviso de Privacidad,</span> así como cualquier modificación o adición al mismo le serán dadas a conocer a usted por cualquiera de los medios establecidos anteriormente, y en caso que no manifieste oposición al contenido y alcances de los mismos dentro de un período de <span id="u100766-497">30 (treinta) días naturales,</span> contados a partir de la fecha en la que se le informe sobre el <span id="u100766-499">Aviso de Privacidad </span>o sus modificaciones, se entenderá que usted otorga su consentimiento tácito para que efectuemos el tratamiento de sus datos personales con base en las finalidades del tratamiento establecidas en el <span id="u100766-501">Aviso de Privacidad.</span></p>
+     <p>&nbsp;</p>
+     <p id="u100766-505">VIII. Cambios al Aviso de Privacidad</p>
+     <p>Nos reservamos el derecho de efectuar en cualquier momento modificaciones o actualizaciones al presente <span id="u100766-507">Aviso de Privacidad, </span>para la atención de novedades legislativas, políticas internas o nuevos requerimientos para la prestación u ofrecimiento de nuestros servicios o productos. Las modificaciones estarán disponibles al público mediante:&nbsp;&nbsp; anuncios visibles en el sitio web www.sadma.com.mx, con anterioridad para tal efecto, en sucursal o se las haremos llegar al último correo electrónico que nos haya proporcionado.</p>
+     <p>&nbsp;</p>
+     <p id="u100766-512">IX. Consentimiento del Titular de los Datos Personales</p>
+     <p>Por mi libre derecho consiento y autorizo expresa y/o tácitamente para que mis datos personales sean tratados conforme a los términos y condiciones previstos en el presente<span id="u100766-514"> Aviso de Privacidad.</span></p>
+     <p>&nbsp;</p>
+     <p id="u100766-518">X. Carácter informativo del presente documento</p>
+     <p>El contenido del presente <span id="u100766-520">Aviso de Privacidad </span>es meramente informativo, por lo que en caso de que usted desee expresar su aceptación o rechazo al contenido del mismo, le invitamos en todo momento a entrar en contacto con SADMA SOLUTIONS a través de los medios anteriormente establecidos.</p>
+     <p>&nbsp;</p>
+     <p id="u100766-525">XI. Quejas y Denuncias</p>
+     <p>Si usted considera que su derecho de protección de datos personales ha sido lesionado por alguna conducta de nuestros empleados o de nuestras actuaciones o respuestas, presume que en el tratamiento de sus datos personales existe alguna violación a las disposiciones previstas en la <span id="u100766-527">Ley Federal de Protección de Datos Personales en Posesión de los Particulares,</span> podrá́ interponer la <span id="u100766-529">queja o denuncia</span> correspondiente ante el<span id="u100766-531"> IFAI,</span> para mayor información visite <span id="u100766-533">www.ifai.org.mx</span></p>
+     <p>&nbsp;</p>
+     <p>Asimismo, le hacemos de su conocimiento que si usted tiene alguna pregunta o desea contactarnos por alguna razón, incluyendo para formular una queja, usted puede realizar cualquiera de los siguientes procedimientos:</p>
+     <p>&nbsp;</p>
+     <p>Comuníquese con nosotros al 3312850665</p>
+     <p>Envíenos un correo a clientes@sadma.com.mx</p>
+     <p>Visítenos en nuestra oficina.</p>
+     <p>&nbsp;</p>
+     <p>El presente Aviso de Privacidad fue actualizado por última vez el 21 de Septiembre del 2020</p>
+     <p>&nbsp;</p>
+     <p>&nbsp;</p>
+    </div>
+   </div>
+</ion-content>
+
+<ion-footer contentId="main-content">
+  <ion-toolbar color="dark" >
+      <ion-row  class="ion-aling-items-center" >
+        
+        <!-- footer Left  -->
+        <ion-col size="6" >
+          <div class="navbar" class="ion-text-left">
+              <ion-button *ngFor="let p of footersLinksStart; let i = index" color="light" fill="clear"  href="{{p.url}}">
+                {{ p.title }}
+              </ion-button>
+          </div>
+        </ion-col>
+        
+        
+        <!-- footer right  -->
+        <ion-col size="6" >
+          <div class="navbar" class="ion-text-right">
+            <ion-button *ngFor="let p of footersLinksEnd; let i = index" color="light" fill="clear" routerLink="{{p.url}}" routerDirection="root" routerLinkActive="active-link" class="link">
+              <ion-icon name="{{p.icon}}"></ion-icon>
+              {{ p.title }}
+            </ion-button>
+          </div>
+        </ion-col>
+      </ion-row>
+  </ion-toolbar>
+</ion-footer>
+
+<ion-router-outlet id="main-content"></ion-router-outlet>

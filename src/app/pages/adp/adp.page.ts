@@ -1,16 +1,16 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-
 @Component({
-  selector: 'app-home',
-  templateUrl: 'home.page.html',
-  styleUrls: ['home.page.scss'],
+  selector: 'app-adp',
+  templateUrl: './adp.page.html',
+  styleUrls: ['./adp.page.scss'],
 })
-export class HomePage {
+export class AdpPage implements OnInit {
 
-  constructor(
-    private router: Router
-    ) {}
+  constructor(private router: Router) { }
+
+  ngOnInit() {
+  }
 
 
   public mainlinks = [
@@ -31,7 +31,7 @@ export class HomePage {
   ];
   
   public headerLinksStart = [
-    { title: 'Inicio', url: '/home/Inbox', icon: 'mail' },
+    { title: 'Inicio', url: 'inicio', icon: 'mail' },
     { title: 'Conocenos', url: '/home/Outbox', icon: 'paper-plane' },
     { title: 'Que hacer en caso de ... ?', url: '/home/Favorites', icon: 'heart' }
   ]

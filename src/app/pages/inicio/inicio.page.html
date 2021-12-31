@@ -1,3 +1,5 @@
+<!-- User Menu tool style="max-width: 300px" -->
+
 <ion-header [translucent]="true" contentId="main-content">
   <ion-toolbar  color="dark" >
     
@@ -18,13 +20,7 @@
 
       <!-- main pages links Right Side -->
       <ion-col size="2">
-        <div class="navbar" class="ion-text-right" *ngIf="!isAuthenticated" >
-          <ion-button (click)="login()" color="light" fill="clear" routerLinkActive="active-link" class="link">
-            <ion-icon name="person-circle"></ion-icon>
-            Iniciar Session
-          </ion-button>
-        </div>
-        <div class="navbar" class="ion-text-right" *ngIf="isAuthenticated" >
+        <div class="navbar" class="ion-text-right"  >
           <ion-button (click)="logout()" color="light" fill="clear" routerLinkActive="active-link" class="link">
             <ion-icon name="person-circle"></ion-icon>
             Cerrar Session
@@ -35,10 +31,6 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true" contentId="main-content">
-
-
-</ion-content>
 
 <ion-footer contentId="main-content">
   <ion-toolbar color="dark" >
@@ -67,4 +59,35 @@
   </ion-toolbar>
 </ion-footer>
 
-<ion-router-outlet id="main-content"></ion-router-outlet>
+
+<ion-split-pane contentId="main-content"  >
+   
+  <ion-menu auto-hide="false" side="start" contentId="main-content" type="overlay"  style="max-width: 300px; top: 45px; " color='dark' >
+    <ion-content >
+      <ion-list id="inbox-list" >
+        <ion-list-header>{{ folder }}</ion-list-header>
+        <ion-menu-toggle auto-hide="false"  *ngFor="let p of appPages; let i = index">
+          <ion-item  routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false" routerLinkActive="selected">
+            <ion-icon slot="start" [ios]="p.icon + '-outline'" [md]="p.icon + '-sharp'"></ion-icon>
+            <ion-label>{{ p.title }}</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+      </ion-list>
+
+      <ion-list id="labels-list" >
+        <ion-list-header>Marcadores</ion-list-header>
+          <ion-item *ngFor="let label of labels" lines="none">
+          <ion-icon  slot="start" ios="bookmark-outline" md="bookmark-sharp"></ion-icon>
+          <ion-label  >{{ label }}</ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+
+  
+  <ion-router-outlet id="main-content"></ion-router-outlet>    
+  
+</ion-split-pane>
+
+
+  
